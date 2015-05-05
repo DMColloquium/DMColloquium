@@ -9,13 +9,13 @@
 #ifndef __DMColloquium__Polynomial__
 #define __DMColloquium__Polynomial__
 
-#include "RationalNumber.h"
+#include "Integer.h"
 
 #endif /* defined(__DMColloquium__Polynomial__) */
 
 class Polynomial {
 private:
-    std::vector<RationalNumber> coefficients;
+    std::vector<Integer> coefficients;
 public:
     
 };

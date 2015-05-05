@@ -19,4 +19,5 @@ private:
     bool isPositive;
 public:
     // All declarations go here
+    Integer MULL_ZZ_Z(Integer x1, Integer x2);//x1 - openand 1, x2 - operand2
 };

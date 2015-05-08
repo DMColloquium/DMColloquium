@@ -23,4 +23,5 @@ protected:
 public:
     NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
     // put declarations-ONLY for each method below
+	NaturalNumber ADD_NN_N(NaturalNumber nat_num_2);
 };

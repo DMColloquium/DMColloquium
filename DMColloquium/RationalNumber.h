@@ -19,4 +19,5 @@ private:
     NaturalNumber denominator;
 public:
     // declarations for methods
+	RationalNumber SUB_QQ_Q(RationalNumber rat_num_2);
 };

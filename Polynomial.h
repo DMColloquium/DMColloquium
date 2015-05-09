@@ -11,14 +11,12 @@
 
 #include "RationalNumber.h"
 
-
+#endif /* defined(__DMColloquium__Polynomial__) */
 
 class Polynomial {
 private:
     std::vector<RationalNumber> coefficients;
 public:
-    Polynomial();
-    Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
+    RationalNumber MUL_P_Q(RationalNumber &obj1);
+    
 };
-
-#endif /* defined(__DMColloquium__Polynomial__) */

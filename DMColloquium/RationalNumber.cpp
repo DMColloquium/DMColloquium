@@ -8,9 +8,9 @@
 
 #include "RationalNumber.h"
 
-//#ifdef USE_FAKE
+#ifdef USE_FAKE
     #include "fakeFunctions.hpp"
-//#endif
+#endif
 
 RationalNumber::RationalNumber()
 {

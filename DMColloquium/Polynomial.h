@@ -13,12 +13,14 @@
 
 
 
-class Polynomial {
+class Polynomial
+{
 private:
     std::vector<RationalNumber> coefficients;
+
 public:
     Polynomial();
-    Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
+    Polynomial(std::vector<RationalNumber> coeff) : coefficients{coeff} {};
 };
 
 #endif /* defined(__DMColloquium__Polynomial__) */

@@ -23,14 +23,14 @@ public:
     Polynomial(std::vector<RationalNumber> coeff) : coefficients{coeff} {};
 
 	/**
-	 * @brief Get num of 
-	 * @return Natural number of 
+	 * @brief Get num of addends
+	 * @return Natural number of addends
 	 */
 	NaturalNumber DEG_P_N();
 	/**
-	 * @brief Get num of 
-	 * @param Polynomial, where we need find num of 
-	 * @return Natural number of 
+	 * @brief Get num of addends
+	 * @param Polynomial, where we need find num of addends
+	 * @return Natural number of addends
 	 */
 	NaturalNumber DEG_P_N(Polynomial const&);
 	friend NaturalNumber DEG_P_N(Polynomial const&);

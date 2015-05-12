@@ -12,15 +12,18 @@
 #include "NaturalNumber.h"
 #include <vector>
 
-class Integer : public NaturalNumber {
+class Integer : public NaturalNumber
+{
 private:
     bool isPositive;
-public:
-    Integer();
-    Integer(std::vector<unsigned int> digits, bool isPositive);
-    Integer(NaturalNumber natural, bool isPositive):NaturalNumber{natural},isPositive{isPositive}{};
-    
-};
 
+public:
+    Integer() : NaturalNumber{} {isPositive = true;};
+    Integer(unsigned int number) : NaturalNumber{number} {isPositive = true;};
+    Integer(unsigned int number, bool isPositive) : NaturalNumber{number}, isPositive{isPositive} {};
+    Integer(std::vector<unsigned int> digits, bool isPositive = true) : NaturalNumber{digits}, isPositive{isPositive} {};
+    Integer(NaturalNumber natural, bool isPositive = true) : NaturalNumber{natural}, isPositive{isPositive} {};
+
+};
 
 #endif /* defined(__DMColloquium__Integer__) */

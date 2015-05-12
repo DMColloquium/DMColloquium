@@ -8,8 +8,16 @@
 
 #include "RationalNumber.h"
 
-RationalNumber::RationalNumber() {
+RationalNumber::RationalNumber()
+{
     numerator = Integer();
-    denominator = NaturalNumber();
-    //denominator.ADD_1N_N();
+    denominator = NaturalNumber(1);
 }
+
+RationalNumber::RationalNumber(RationalNumber const& source)
+{
+    this->numerator = source.numerator;
+    this->denominator = source.denominator;
+}
+
+

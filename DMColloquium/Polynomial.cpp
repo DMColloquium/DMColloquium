@@ -8,6 +8,5 @@
 
 #include "Polynomial.h"
 using namespace std;
-Polynomial::Polynomial() {
-    coefficients = vector<RationalNumber>(1);
-}
+
+//

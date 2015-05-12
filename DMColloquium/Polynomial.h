@@ -13,12 +13,27 @@
 
 
 
-class Polynomial {
+class Polynomial
+{
 private:
     std::vector<RationalNumber> coefficients;
+
 public:
     Polynomial();
-    Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
+    Polynomial(std::vector<RationalNumber> coeff) : coefficients{coeff} {};
+
+	/**
+	 * @brief Get num of 
+	 * @return Natural number of 
+	 */
+	NaturalNumber DEG_P_N();
+	/**
+	 * @brief Get num of 
+	 * @param Polynomial, where we need find num of 
+	 * @return Natural number of 
+	 */
+	NaturalNumber DEG_P_N(Polynomial const&);
+	friend NaturalNumber DEG_P_N(Polynomial const&);
 };
 
 #endif /* defined(__DMColloquium__Polynomial__) */

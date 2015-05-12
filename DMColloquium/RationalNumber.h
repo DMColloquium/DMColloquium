@@ -14,15 +14,19 @@
 
 
 
-class RationalNumber {
+class RationalNumber
+{
 private:
     Integer numerator;
     NaturalNumber denominator;
+
 public:
     // Instanciates a rational number (0/1)
     RationalNumber();
-    RationalNumber(Integer numerator, NaturalNumber denominator):numerator{numerator},denominator{denominator}{};
+    RationalNumber(RationalNumber const&);
+    RationalNumber(Integer numerator, NaturalNumber denominator) : numerator{numerator}, denominator{denominator} {};
     // declarations for methods
+
 };
 
 #endif

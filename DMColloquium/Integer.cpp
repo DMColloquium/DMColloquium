@@ -9,13 +9,19 @@
 #include "Integer.h"
 using namespace std;
 
-Integer::Integer() {
-    digitBlocks = vector<unsigned int>(1);
-    digitBlocks[0] = 0;
-    isPositive = true;
+/*
+ * Author: Тулупов Артём 4302
+ */
+NaturalNumber Integer::TRANS_Z_N()
+{
+	return this->toNatural();
 }
-
-Integer::Integer(vector<unsigned int> digits, bool isPositive) {
-    digitBlocks = digits;
-    this->isPositive = isPositive;
+NaturalNumber Integer::toNatural()
+{
+	NaturalNumber result(this->digitBlocks);
+	return result;
+}
+NaturalNumber TRANS_Z_N(Integer const& source)
+{
+	return source.toNatural();
 }

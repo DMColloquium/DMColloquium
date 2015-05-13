@@ -1,17 +1,7 @@
-//
-//  NaturalNumber.h
-//  DMColloquium
-//
-//  Created by Ilya Kulebyakin on 4/28/15.
-//  Copyright (c) 2015 Ilya Kulebyakin. All rights reserved.
-//
-
 #ifndef __DMColloquium__NaturalNumber__
 #define __DMColloquium__NaturalNumber__
 
 #include <vector>
-
-
 
 class NaturalNumber {
 protected:
@@ -24,8 +14,7 @@ public:
     NaturalNumber();
     NaturalNumber(std::vector<unsigned int> digits):digitBlocks{digits}{};
     NaturalNumber ADD_1N_N();
-    
-    // put declarations-ONLY for each method below
+    int COM_NN_D(NaturalNumber);
 };
 
 #endif /* defined(__DMColloquium__NaturalNumber__) */

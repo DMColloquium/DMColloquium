@@ -19,7 +19,7 @@ std::vector<RationalNumber>Polynomial:: GCF_PP_P(int degree1, std::vector<Ration
 	std::vector<RationalNumber> a,b;
 	a = coeff_p1;
 	b = coeff_p2;
-	while (mov_pp__p(a, b) != 0)/*остаток от деления мн-на на мн-н*/
+	while (mov_pp__p(a, b) != 0)/*остаток от деления мн-на на многочлен*/
 	{
 		a = mov_pp__p(a, b);
 		a.swap(b);

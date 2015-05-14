@@ -9,13 +9,28 @@
 #include "Integer.h"
 using namespace std;
 
-Integer::Integer() {
-    digitBlocks = vector<unsigned int>(1);
-    digitBlocks[0] = 0;
-    isPositive = true;
+/*
+ * 4302 Levchenko
+ * \{begin block}
+ */
+bool Integer::check() const
+{
+    return !bad();
 }
-
-Integer::Integer(vector<unsigned int> digits, bool isPositive) {
-    digitBlocks = digits;
-    this->isPositive = isPositive;
+bool Integer::bad() const
+{
+    return digitBlocks.empty();
 }
+bool operator ==(Integer const& left, Integer const& right)
+{
+    return (left.digitBlocks == right.digitBlocks) && (left.isPositive == right.isPositive);
+}
+bool operator !=(Integer const& left, Integer const& right)
+{
+    return !(left == right);
+}
+/*
+ * 4302 Levchenko
+ * \{end block}
+ */
+ 

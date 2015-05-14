@@ -19,7 +19,7 @@ public:
     Integer();
     Integer(std::vector<unsigned int> digits, bool isPositive);
     Integer(NaturalNumber natural, bool isPositive):NaturalNumber{natural},isPositive{isPositive}{};
-    
+    Integer ADD_ZZ_Z(Integer);
 };
 
 

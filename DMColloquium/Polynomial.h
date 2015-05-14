@@ -10,6 +10,7 @@
 #define __DMColloquium__Polynomial__
 
 #include "RationalNumber.h"
+#include <vector>
 
 
 
@@ -21,6 +22,7 @@ private:
 public:
     Polynomial();
     Polynomial(std::vector<RationalNumber> coeff) : coefficients{coeff} {};
+
 };
 
 #endif /* defined(__DMColloquium__Polynomial__) */

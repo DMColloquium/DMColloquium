@@ -30,6 +30,21 @@ public:
     
     // put declarations-ONLY for each method below
 
+    /**
+    * @brief Validate natural number
+    * @return False, if digitBlocks is empty vector or zero. True, otherwise.
+    */
+    bool check() const;
+    /**
+    * @brief Validate natural number for bad
+    * @return True, if digitBlocks is empty vector or zero. False, otherwise.
+    */
+    bool bad() const;
+    /**
+     * @brief Comparison operators for natural numbers
+     */
+    friend bool operator ==(NaturalNumber const&, NaturalNumber const&);
+    friend bool operator !=(NaturalNumber const&, NaturalNumber const&);
 };
 
 #endif /* defined(__DMColloquium__NaturalNumber__) */

@@ -10,13 +10,20 @@
 #define IntegerIncluded
 
 #include "Integer.h"
+#include "NaturalNumber.h"
 
-#endif
+
 
 class RationalNumber {
 private:
     Integer numerator;
     NaturalNumber denominator;
 public:
+    // Instanciates a rational number (0/1)
+    RationalNumber();
+    RationalNumber(Integer numerator, NaturalNumber denominator):numerator{numerator},denominator{denominator}{};
+	RationalNumber MUL_QQ_Q(rational n);
     // declarations for methods
 };
+
+#endif

@@ -23,7 +23,9 @@ Integer::Integer(vector<unsigned int> digits, bool isPositive) {
 
 //Z-9 Науменко и Смагин
 //Остаток от деления большего целого числа на меньшее или равное натуральное
-Integer MOD_ZZ_Z(Integer a, NaturalNumber b)
+Integer Integer::MOD_ZZ_Z(NaturalNumber b)
 {
-	return SUB_ZZ_Z(a, MUL_ZZ_Z(TRANS_N_Z(b), DIV_ZZ_Z(a, b)));
+	Integer I = TRANS_N_Z(b);
+	I = MUL_ZZ_Z(DIV_ZZ_Z(I));
+	return SUB_ZZ_Z(I);
 }

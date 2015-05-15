@@ -19,6 +19,7 @@ private:
 public:
     Polynomial();
     Polynomial(std::vector<RationalNumber> coeff):coefficients{coeff}{};
+    Polynomial DIV_PP_P(Polynomial);
 };
 
 #endif /* defined(__DMColloquium__Polynomial__) */

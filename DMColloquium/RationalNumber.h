@@ -22,7 +22,7 @@ public:
     // Instanciates a rational number (0/1)
     RationalNumber();
     RationalNumber(Integer numerator, NaturalNumber denominator):numerator{numerator},denominator{denominator}{};
-	RationalNumber MUL_QQ_Q(rational n);
+    RationalNumber MUL_QQ_Q(RationalNumber n);
     // declarations for methods
 };
 

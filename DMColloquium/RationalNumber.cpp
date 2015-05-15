@@ -14,7 +14,7 @@ RationalNumber::RationalNumber() {
     //denominator.ADD_1N_N();
 }
 
-//Q-7
+//Q-7 Науменко и Смагин
 //Умножение дробей
 RationalNumber RationalNumber::MUL_QQ_Q(RationalNumber r)
 {

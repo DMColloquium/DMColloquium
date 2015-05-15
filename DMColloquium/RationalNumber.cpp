@@ -7,9 +7,3 @@
 //
 
 #include "RationalNumber.h"
-
-RationalNumber::RationalNumber() {
-    numerator = Integer();
-    denominator = NaturalNumber();
-    //denominator.ADD_1N_N();
-}

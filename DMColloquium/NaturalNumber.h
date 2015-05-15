@@ -21,10 +21,7 @@ protected:
     // digitBlocks[0] = 678901234
     std::vector<unsigned int> digitBlocks;
 public:
-    NaturalNumber();
-    NaturalNumber(std::vector<unsigned int> digits):digitBlocks{digits}{};
-    NaturalNumber ADD_1N_N();
-    
+    NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
     // put declarations-ONLY for each method below
 };
 

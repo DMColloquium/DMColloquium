@@ -25,7 +25,7 @@ Integer::Integer(vector<unsigned int> digits, bool isPositive) {
 //Остаток от деления большего целого числа на меньшее или равное натуральное
 Integer Integer::MOD_ZZ_Z(NaturalNumber b)
 {
-	Integer I = TRANS_N_Z(b);
-	I = MUL_ZZ_Z(DIV_ZZ_Z(I));
+	Integer I = b.TRANS_N_Z();
+	I = I.MUL_ZZ_Z( DIV_ZZ_Z(b) );
 	return SUB_ZZ_Z(I);
 }

@@ -19,7 +19,7 @@ public:
     Integer();
     Integer(std::vector<unsigned int> digits, bool isPositive);
     Integer(NaturalNumber natural, bool isPositive):NaturalNumber{natural},isPositive{isPositive}{};
-	Integer MOD_ZZ_Z(integer, natural);//Z-9 Науменко Смагин
+    Integer MOD_ZZ_Z(NaturalNumber);//Z-9 Науменко Смагин
 };
 
 

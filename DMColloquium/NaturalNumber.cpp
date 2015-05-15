@@ -1,4 +1,4 @@
-//
+﻿//
 //  NaturalNumber.cpp
 //  DMColloquium
 //
@@ -18,7 +18,7 @@ NaturalNumber::NaturalNumber()
 }
 
 /*
- * Для Поляковой
+ * Полякова 4302
  * \{begin block}
  */
 NaturalNumber const NaturalNumber::MUL_Nk_N(unsigned int k)
@@ -92,7 +92,6 @@ NaturalNumber const operator *(unsigned int k, NaturalNumber const& num)
  */
 
 /*
- * 4302 Levchenko
  * \{begin block}
  */
 
@@ -113,6 +112,5 @@ bool operator !=(NaturalNumber const& left, NaturalNumber const& right)
     return !(left == right);
 }
 /*
- * 4302 Levchenko
  * \{end block}
  */

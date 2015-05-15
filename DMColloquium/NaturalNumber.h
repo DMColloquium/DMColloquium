@@ -30,6 +30,15 @@ public:
     
     // put declarations-ONLY for each method below
 
+    // Модицируют *this, возвращают *this
+    NaturalNumber const MUL_Nk_N(unsigned int);
+    NaturalNumber& operator *=(unsigned int);
+    // Модифицирует *this, возвращает успех/неуспех
+    bool MUL_Nk_Nb(unsigned int);
+    // Просто работают
+    friend NaturalNumber const operator *(NaturalNumber const&, unsigned int);
+    friend NaturalNumber const operator *(unsigned int, NaturalNumber const&);
+
     /**
     * @brief Validate natural number
     * @return False, if digitBlocks is empty vector or zero. True, otherwise.

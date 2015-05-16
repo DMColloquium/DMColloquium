@@ -16,6 +16,16 @@ NaturalNumber::NaturalNumber() {
     digitBlocks[0] = 0;
 }
 
+bool NaturalNumber::NZER_N_B()
+{
+    for (int i = 0; i < digitBlocks.size(); i++)
+    {
+        if (digitBlocks[i] != 0)
+            return true;
+    }
+    return false;
+}
+
 void NaturalNumber::setDigitsFromString(std::string numStr) {
     auto endPos = remove(numStr.begin(), numStr.end(), ' ');
     numStr.erase(endPos, numStr.end());

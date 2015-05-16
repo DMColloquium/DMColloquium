@@ -24,5 +24,6 @@ public:
     // RationalNumber objects separated by comma ("1235/12341, 234623452345/23462346, -23452346/23462346523456")
     friend std::istream& operator>> (std::istream& str, Polynomial& polinom);
 };
-
+RationalNumber LED_P_Z();
+    
 #endif /* defined(__DMColloquium__Polynomial__) */

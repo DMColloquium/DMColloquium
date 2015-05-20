@@ -11,8 +11,10 @@
 
 #include "Integer.h"
 #include "NaturalNumber.h"
-
-
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <vector>
 
 class RationalNumber {
 private:
@@ -22,7 +24,11 @@ public:
     // Instanciates a rational number (0/1)
     RationalNumber();
     RationalNumber(Integer numerator, NaturalNumber denominator):numerator{numerator},denominator{denominator}{};
-    // declarations for methods
+    Integer TRAN_Q_Z(RationalNumber);
+    
+    // "numerator/denominator" ("-23541234123512351235/124612354123512351236")
+    friend std::istream& operator>> (std::istream& str, RationalNumber& ratNum);
+    friend std::ostream& operator<< (std::ostream& str, const RationalNumber& ratNum);
 };
 
 #endif

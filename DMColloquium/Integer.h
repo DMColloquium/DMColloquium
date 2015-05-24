@@ -23,6 +23,7 @@ public:
     //("2346234623452346234623462346") ("-234623452346234623462346") ("+234652345234623462346")
     friend std::istream& operator>> (std::istream& str, Integer& integer);
     friend std::ostream& operator<< (std::ostream& str, const Integer& integer);
+    Integer MUL_ZZ_Z(Integer &obj);
 };
 
 

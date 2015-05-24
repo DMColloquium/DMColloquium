@@ -47,3 +47,18 @@ ostream& operator<< (ostream& str, const Integer& number) {
     number.writeDigitsToStream(str);
     return str;
 }
+
+Integer Integer::MUL_ZZ_Z(Integer &obj){
+    Integer result;
+    if(POZ_Z_D(this) == 0 || POZ_Z_D(x2) == 0){
+        return result;
+    }else if (POZ_Z_D(this)==POZ_Z_D(x2)){
+        result.isPositive = true;
+        return result.ABS_Z_N(this->MUL_NN_N(x2));
+    }else{
+        result = this->MUL_NN_N(x2);
+        result.isPositive = false;
+    }
+    
+    return result;
+}

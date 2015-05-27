@@ -17,5 +17,5 @@ class Polynomial {
 private:
     std::vector<RationalNumber> coefficients;
 public:
-    
+    Polynomial ADD_PP_P(Polynomial p2);
 };

@@ -22,5 +22,6 @@ protected:
     std::vector<unsigned int> digitBlocks;
 public:
     NaturalNumber greatestCommonFactor(NaturalNumber secondNumber);
+    NaturalNumber SUB_NN_N(NaturalNumber nat_num2);
     // put declarations-ONLY for each method below
 };
